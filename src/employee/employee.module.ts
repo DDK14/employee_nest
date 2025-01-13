@@ -7,6 +7,7 @@ import { Employee } from './models/employee/employee';
 @Module({
   imports:[SequelizeModule.forFeature([Employee])],
   providers: [EmployeeService],
-  controllers: [EmployeeController]
+  controllers: [EmployeeController],
+  exports:[SequelizeModule]
 })
 export class EmployeeModule {}
