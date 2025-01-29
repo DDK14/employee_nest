@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { EmployeeModule } from './employee/employee.module';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Employee } from './employee/models/employee/employee';
+import { EmployeeDraftModule } from './employee-draft/employee-draft.module';
 
 @Module({
   imports: [SequelizeModule.forRoot({
@@ -17,7 +18,8 @@ import { Employee } from './employee/models/employee/employee';
     autoLoadModels: true,
     synchronize: false,
   }),
-  EmployeeModule],
+  EmployeeModule,
+  EmployeeDraftModule],
   controllers: [AppController],
   providers: [AppService],
 })
