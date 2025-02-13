@@ -13,7 +13,7 @@ export class CreateEmployeeDto{
     @IsNotEmpty()
     location!: string;
 
-    @IsString()
+    @IsDate()
     @IsNotEmpty()
     dateOfJoining!: Date;
 

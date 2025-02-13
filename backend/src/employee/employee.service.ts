@@ -35,7 +35,7 @@ export class EmployeeService {
       const emp= await this.employeeModel.create({
         name:draft.name,
         proposedRole:draft.proposedRole,
-    location:draft.location,
+        location:draft.location,
         dateOfJoining:draft.dateOfJoining,
         employeeCode:draft.employeeCode,
         personalEmail: draft.personalEmail,
